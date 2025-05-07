@@ -19,7 +19,7 @@ const TypingTestPage = () => {
     const [timeLeft, setTimeLeft] = useState(totalTime)
     
     useEffect(() => {
-        axios.get('http://localhost:5000/api/text')   
+        axios.get('https://server-6-2dbf.onrender.com/api/text')   
             .then((res) => {
                 setText(res.data.text)
             }) 
